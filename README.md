@@ -1,1 +1,1 @@
-<img src="icon.png" width="50" height="50">
+![Alt text](/src/assets/icon.png)
