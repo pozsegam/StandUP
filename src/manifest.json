@@ -1,0 +1,15 @@
+{
+  "manifest_version": 3,
+  "name": "StandUP",
+  "description": "Extension to stand up every 30 minutes to avoid back pain",
+  "version": "1.0.0",
+  "icons": {
+    "16": "icon.png",
+    "48": "icon.png",
+    "128": "icon.png"
+  },
+  "action": {
+    "default_title": "StandUP",
+    "default_popup": "popup.html"
+  }
+}
