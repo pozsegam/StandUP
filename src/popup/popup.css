@@ -31,3 +31,25 @@ img {
   flex-direction: row;
   justify-content: space-between;
 }
+
+.row-title {
+  font-weight: 500;
+}
+.row-value {
+  color: #6c1e5f;
+}
+
+.button-container {
+  cursor: pointer;
+  border-radius: 14px;
+  width: 40%;
+  height: 45px;
+  display: flex;
+  justify-content: center;
+  background: linear-gradient(180deg, #6c1e5f 0%, #581e6e 100%);
+
+  align-items: center;
+}
+.button-content {
+  color: white;
+}
