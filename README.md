@@ -1,1 +1,1 @@
-![STANDUP]('icon.png')
+![STANDUP]('src/assets/icon.png')
