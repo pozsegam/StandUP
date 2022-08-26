@@ -11,5 +11,9 @@
   "action": {
     "default_title": "StandUP",
     "default_popup": "popup.html"
-  }
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "permissions": ["alarms"]
 }

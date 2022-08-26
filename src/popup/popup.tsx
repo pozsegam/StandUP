@@ -1,13 +1,26 @@
 import './popup.css';
 
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { createRoot } from 'react-dom/client';
 
 const RowElement = () => {
+  const THIRTY_MIN = 1800;
+  const [timer, setTimer] = useState(THIRTY_MIN);
+
+  useEffect(() => {
+    const intervalId = setInterval(() => {
+      updateTime();
+    }, 1000);
+    // return () => clearInterval(intervalId);
+  }, []);
+
+  const updateTime = () => {
+    setTimer((prev) => prev - 1);
+  };
   return (
     <div className='row-container'>
       <h1 className='row-title'>Time left</h1>
-      <h1 className='row-value'>21:24</h1>
+      <h1 className='row-value'>{timer}</h1>
     </div>
   );
 };
@@ -20,7 +33,7 @@ const Button = () => {
   );
 };
 
-const breakTime = (
+const App = (
   <div className='container'>
     <img src='icon.png' alt='' />
     <RowElement />
@@ -32,4 +45,4 @@ const container = document.createElement("div");
 document.body.appendChild(container);
 const root = createRoot(container);
 
-root.render(breakTime);
+root.render(App);

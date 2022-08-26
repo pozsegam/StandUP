@@ -39,6 +39,10 @@ module.exports = {
     new CopyPlugin({
       patterns: [
         { from: path.resolve("src/manifest.json"), to: path.resolve("dist") },
+        {
+          from: path.resolve("src/background/background.js"),
+          to: path.resolve("dist"),
+        },
         { from: path.resolve("src/assets/icon.png"), to: path.resolve("dist") },
         {
           from: path.resolve("src/assets/break_time.svg"),
